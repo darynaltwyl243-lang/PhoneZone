@@ -17,12 +17,10 @@ const Navbar = ({ cartCount, onCartClick }) => {
 
         <div className="px-5 sm:px-8 py-3 flex justify-between items-center">
 
-          {/* Logo */}
           <h1 className="text-xl tracking-wide font-bold">
             Phone<span className="text-blue-400">Zone</span>
           </h1>
 
-          {/* Desktop Links */}
           <ul className="hidden md:flex items-center font-medium text-[15px] gap-10">
             <li>
               <a href="#home" className="relative group transition duration-300 hover:text-cyan-400">
@@ -46,7 +44,7 @@ const Navbar = ({ cartCount, onCartClick }) => {
             </li>
           </ul>
 
-          {/* Cart and Menu */}
+        
           <div className="flex items-center gap-5">
 
             <button
@@ -60,7 +58,6 @@ const Navbar = ({ cartCount, onCartClick }) => {
               </span>
             </button>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-white hover:text-blue-400 transition"
@@ -72,7 +69,6 @@ const Navbar = ({ cartCount, onCartClick }) => {
           </div>
         </div>
 
-        {/* Mobile Links */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-700 px-5 py-4">
             <ul className="flex flex-col gap-5 font-medium text-[15px]">
