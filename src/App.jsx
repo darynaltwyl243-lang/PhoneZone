@@ -89,6 +89,8 @@ function App() {
       <Contact />
 
       <Footer />
+
+      
       {message && (
         <div className="fixed top-24 right-5 z-[100] bg-green-600 text-white px-6 py-4 rounded-xl shadow-lg text-2xl">
           {message}

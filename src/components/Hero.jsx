@@ -1,33 +1,46 @@
+
 import hero from "../assets/images/hero.png"
+
 const Hero = () => {
-    return (
-        <section className="bg-gray-200 py-4">
-            <div className="container py-10 flex justify-between items-center gap-2 px-4 mx-auto">
-                <div className="max-w-lg">
-                    <p className="font-semibold text-2xl mb-10 text-blue-600">WELCOME TO PHONEZONE</p>
+  return (
+    <section className="bg-gray-200 py-12">
+      <div className="container mx-auto px-8 py-8 flex flex-col md:flex-row justify-center items-center gap-10">
 
-                    <h1 className="text-[#101828] font-bold text-5xl leading-tight mb-6">Discover Your <span className="text-blue-600">Perfect Phone</span></h1>
+        <div className="max-w-md">
+          <p className="font-semibold text-base mb-6 text-blue-600">
+            WELCOME TO PHONEZONE
+          </p>
 
-                    <p className="text-gray-600 leading-8 mb-7">Explore the latest smartphones from top brands.
-                        Find your perfect device at the best prices.</p>
+          <h1 className="text-[#101828] font-bold text-3xl leading-tight mb-5">
+            Discover Your{" "}
+            <span className="text-blue-600">Perfect Phone</span>
+          </h1>
 
+          <p className="text-gray-600 leading-7 mb-6">
+            Explore the latest smartphones from top brands.
+            Find your perfect device at the best prices.
+          </p>
 
-                    <a href="#Products" className="bg-blue-600 text-white px-7 py-4 inline-block rounded-lg font-semibold text-lg shadow-lg shadow-blue-200 hover:bg-blue-700">
-                        Shop Now
-                    </a>
-                </div>
+          <a
+            href="#products"
+            className="bg-blue-600 text-white px-7 py-3 inline-block rounded-lg font-semibold text-sm shadow-lg shadow-blue-200 hover:bg-blue-700 transition duration-300"
+          >
+            Shop Now
+          </a>
+        </div>
 
-                <div>
-                    <img 
-                       src= {hero} 
-                       alt="Smartphone" 
-                       className="object-contain w-full max-w-md h-180"
-                    />
-                </div>
-                
-            </div>
-        </section>
-    )
+        <div className="w-full max-w-md">
+          <img
+            src={hero}
+            alt="Smartphone"
+            className="object-contain w-full h-72"
+          />
+        </div>
+
+      </div>
+    </section>
+  )
 }
 
-export default Hero;
+export default Hero
+
